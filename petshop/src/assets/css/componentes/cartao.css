@@ -1,0 +1,64 @@
+.cartao {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 45rem;
+    padding: 1.75rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.cartao__titulo {
+    font-size: var(--fonte-tamanho-cartao-titulo);
+    margin-bottom: 1rem;
+}
+
+.cartao__texto {
+    line-height: 1.2rem;
+}
+
+.cartao-post {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 2rem 2rem;
+    box-sizing: border-box;
+    margin-bottom: 2.25rem;
+    border-top: 1rem solid;
+}
+
+.cartao-post__titulo {
+    font-size: var(--fonte-tamanho-cartao-post-titulo);
+    font-weight: var(--fonte-peso-cartao);
+    margin-bottom: 1rem;
+}
+
+.cartao-post__meta {
+    line-height: 1.3rem;
+}
+
+.cartao-post--bem-estar {
+    border-color: var(--cor-categoria-bem-estar);
+}
+
+.cartao-post--comportamento {
+    border-color: var(--cor-categoria-comportamento);
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 900px) {
+    .posts {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
